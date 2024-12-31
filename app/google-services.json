@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "155031488126",
+    "firebase_url": "https://whatsapp-clone-c6bc4-default-rtdb.firebaseio.com",
+    "project_id": "whatsapp-clone-c6bc4",
+    "storage_bucket": "whatsapp-clone-c6bc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155031488126:android:07e1d7f574af44fd047a2f",
+        "android_client_info": {
+          "package_name": "com.tech.whatsappclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155031488126-nostrvcvioge8rhcofojk4r6ppdtrhrs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.whatsappclone",
+            "certificate_hash": "8b30bff4abe3623fbbd6d32938141a71a56fee4c"
+          }
+        },
+        {
+          "client_id": "155031488126-q4b8935vs12i7m5jg0niu8a7bc59d9jk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.whatsappclone",
+            "certificate_hash": "09cbe5d48847bba99616ae074e060b05b2ef599f"
+          }
+        },
+        {
+          "client_id": "155031488126-sh5rri1recu1ki46goqv9r4qogdh9oed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9lB6v5W3eEZx-jRw7QagRH8hjK9sfu24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155031488126-egmrbredsmldsmvs4h0578gb2hi3b795.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155031488126:android:1b2484a629954e7d047a2f",
+        "android_client_info": {
+          "package_name": "com.tech.xchatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155031488126-mmb4u3la30f4ek0lv2n5oei5t3kvfkd3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tech.xchatapp",
+            "certificate_hash": "8b30bff4abe3623fbbd6d32938141a71a56fee4c"
+          }
+        },
+        {
+          "client_id": "155031488126-sh5rri1recu1ki46goqv9r4qogdh9oed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9lB6v5W3eEZx-jRw7QagRH8hjK9sfu24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155031488126-egmrbredsmldsmvs4h0578gb2hi3b795.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
