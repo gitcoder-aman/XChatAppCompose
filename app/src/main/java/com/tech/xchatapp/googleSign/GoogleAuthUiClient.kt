@@ -12,6 +12,8 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.auth
 import com.tech.xchatapp.ChatViewModel
 import com.tech.xchatapp.R
+import com.tech.xchatapp.SignInResult
+import com.tech.xchatapp.UserData
 import kotlinx.coroutines.tasks.await
 import kotlin.coroutines.cancellation.CancellationException
 
@@ -39,11 +41,11 @@ class GoogleAuthUiClient(
     private fun buildSignInRequest(): BeginSignInRequest {
         return BeginSignInRequest.builder().setGoogleIdTokenRequestOptions(
             GoogleIdTokenRequestOptions.builder().setSupported(true)
-                .setFilterByAuthorizedAccounts(false).setServerClientId(R.string.default_web_client_id.toString()).build()
+                .setFilterByAuthorizedAccounts(false).setServerClientId(context.getString(R.string.default_web_client_id)).build()
         ).setAutoSelectEnabled(true).build()
     }
 
-    suspend fun signInWithIntent(intent : Intent) : SignInResult{
+    suspend fun signInWithIntent(intent : Intent) : SignInResult {
         viewModel.resetState()
         val credential = oneTapClient.getSignInCredentialFromIntent(intent)
         val googleIdToken = credential.googleIdToken
@@ -70,6 +72,16 @@ class GoogleAuthUiClient(
                 errorMessage = e.message
             )
         }
+    }
+
+    fun getSignedInUser(): UserData? = auth.currentUser?.run {
+        UserData(
+            email = email.toString(),
+            userId = uid,
+            username = displayName.toString(),
+            profilePictureUrl = photoUrl.toString()
+        )
+
     }
 
 }

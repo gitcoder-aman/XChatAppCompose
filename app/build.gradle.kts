@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.google.gms.google.services)
+    kotlin("plugin.serialization") version "2.1.0"
 }
 
 android {
@@ -52,6 +53,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.firebase.auth)
     implementation(libs.play.services.auth)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -59,4 +61,10 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.navigation.compose)
+    implementation(libs.kotlinx.serialization.json)
+
+    implementation(libs.androidx.material.icons.extended)
+
 }
